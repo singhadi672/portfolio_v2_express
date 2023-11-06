@@ -27,10 +27,7 @@ app.use("/blogs", blogsRouter)
 app.use("/contact", contactsRouter)
 
 app.get("/", (req, res) => {
-    res.status(200).json({
-        success: true,
-        message: "portfolio v2 app"
-    })
+    res.send("apis for ecox-in ©Aditya Singh");
 })
 
 app.listen( PORT, () => console.log(`app service running`))
