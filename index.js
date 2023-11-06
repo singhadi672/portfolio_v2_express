@@ -9,7 +9,7 @@ const experienceRouter = require('./routes/experience.route')
 const blogsRouter = require('./routes/blogs.route')
 const contactsRouter = require('./routes/contact.route')
 
-env.config();
+// env.config();
 
 const app = express()
 const PORT = 5000
@@ -32,6 +32,6 @@ app.get("/", (req, res) => {
     })
 })
 
-app.listen(process.env.PORT || PORT, () => console.log(`app service running`))
+app.listen( PORT, () => console.log(`app service running`))
 
 module.exports = app
