@@ -1,6 +1,6 @@
 const express = require('express')
 const cors = require('cors')
-const env = require('dotenv')
+// const env = require('dotenv')
 const { dbConnection } = require('./database/connection.db')
 const homeRouter = require('./routes/home.route')
 const introRouter = require('./routes/intro.route')
@@ -32,4 +32,3 @@ app.get("/", (req, res) => {
 
 app.listen( PORT, () => console.log(`app service running`))
 
-module.exports = app
