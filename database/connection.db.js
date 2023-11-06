@@ -1,10 +1,10 @@
 const env = require('dotenv')
 const mongoose = require('mongoose')
 
-env.config();
+// env.config();
 
-const password = process.env.DB_CONNECTION_PASSWORD
-const DbName = process.env.DB_CONNECTION_DB_NAME
+const password = 'aditya1997'
+const DbName = "portfolio_v2"
 
 
 const connectionStr = `mongodb+srv://MongoDbUser:${password}@neog-cluster.d8w2z.mongodb.net/${DbName}?retryWrites=true&w=majority`
