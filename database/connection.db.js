@@ -3,11 +3,11 @@ const mongoose = require('mongoose')
 
 // env.config();
 
-const password = 'aditya1997'
+// const password = 'aditya1997'
 const DbName = "portfolio_v2"
 
 
-const connectionStr = `mongodb+srv://MongoDbUser:${password}@neog-cluster.d8w2z.mongodb.net/${DbName}?retryWrites=true&w=majority`
+const connectionStr = `mongodb+srv://MongoDbUser:aditya1997@neog-cluster.d8w2z.mongodb.net/${DbName}?retryWrites=true&w=majority`
 const dbConnection = async () => {
     try {
 
