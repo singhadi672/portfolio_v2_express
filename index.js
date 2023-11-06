@@ -14,9 +14,10 @@ const contactsRouter = require('./routes/contact.route')
 const app = express()
 const PORT = 5000
 
+app.use(express.json());
+app.use(cors())
 dbConnection()
 
-app.use(cors())
 
 app.use("/home", homeRouter)
 app.use("/intro", introRouter)
