@@ -18,5 +18,14 @@
     "build": "./node_modules/.bin/netlify-lambda build src"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "faker": "^5.5.3",
+    "heroku": "^7.52.0",
+    "lodash": "^4.17.21",
+    "mongoose": "^5.12.5"
+  }
 }
