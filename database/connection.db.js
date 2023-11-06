@@ -1,23 +1,23 @@
-const env = require('dotenv')
+// const env = require('dotenv')
 const mongoose = require('mongoose')
 
 // env.config();
 
 // const password = 'aditya1997'
-const DbName = "portfolio_v2"
+const dbName = "portfolio_v2"
 
 
-const connectionStr = `mongodb+srv://MongoDbUser:aditya1997@neog-cluster.d8w2z.mongodb.net/${DbName}?retryWrites=true&w=majority`
-const dbConnection = async () => {
-    try {
+async function dbConnection() {
+  try {
+    await mongoose.connect(
+      `mongodb+srv://MongoDbUser:aditya1997@neog-cluster.d8w2z.mongodb.net/${dbName}`,
+      { useNewUrlParser: true, useUnifiedTopology: true }
+    );
 
-        const response = await mongoose.connect(connectionStr)
-
-        console.log("connection successful")
-
-    } catch (error) {
-        console.log('database error -->', error)
-    }
+    console.log(`connection successfull with database ${dbName}`);
+  } catch (err) {
+    console.log(err);
+  }
 }
 
 module.exports = { dbConnection }
