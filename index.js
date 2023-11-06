@@ -27,7 +27,7 @@ app.use("/blogs", blogsRouter)
 app.use("/contact", contactsRouter)
 
 app.get("/", (req, res) => {
-    res.send("apis for ecox-in ©Aditya Singh");
+    res.send("apis for portfolio ©Aditya Singh");
 })
 
 app.listen( PORT, () => console.log(`app service running`))
